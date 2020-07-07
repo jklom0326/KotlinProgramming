@@ -1,6 +1,5 @@
 package com.example.jklom0326.chap03.section03.funcref
 
-import kotlin.concurrent.fixedRateTimer
 
 fun main(){
     val res1 = funcParam(3,2,::sum)
