@@ -1,4 +1,4 @@
-package com.example.jklom0326.chap05.section3
+package com.example.jklom0326.chap05.section4
 
 open class Person{
     constructor(firstName: String){
@@ -8,7 +8,7 @@ open class Person{
         println("[Person] firstName : $firstName , $age")
     }
 }
-class Developer: Person{
+class Developer: Person {
     constructor(firstName: String): this(firstName,10){ // (1)
         println("[Developer] $firstName")
     }
