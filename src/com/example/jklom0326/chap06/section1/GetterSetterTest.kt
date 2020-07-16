@@ -1,4 +1,4 @@
-package com.example.jklom0326.chap06
+package com.example.jklom0326.chap06.section1.property2
 
 class User(_id: Int, _name: String, _age: Int){
     val id: Int = _id

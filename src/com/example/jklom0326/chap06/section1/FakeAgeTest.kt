@@ -1,11 +1,11 @@
-package com.example.jklom0326.chap06
+package com.example.jklom0326.chap06.section1
 
 fun main() {
     val kim = FakeAge()
     kim.age = 15
     println("Kim's real age = 15, pretended age = ${kim.age}")
 
-    val hong =FakeAge()
+    val hong = FakeAge()
     hong.age = 35
     println("Hong's real age = 35, pretended age = ${hong.age}")
 }

@@ -1,4 +1,4 @@
-package com.example.jklom0326.chap06
+package com.example.jklom0326.chap06.section1
 
 open class First{
     open val x: Int = 0 // (1) 오버라이딩 가능

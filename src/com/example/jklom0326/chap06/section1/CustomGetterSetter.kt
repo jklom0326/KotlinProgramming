@@ -1,4 +1,4 @@
-package com.example.jklom0326.chap06.customgetset
+package com.example.jklom0326.chap06.secion1
 
 class User(_id: Int, _name: String, _age: Int){
     val id: Int = _id
@@ -11,7 +11,7 @@ class User(_id: Int, _name: String, _age: Int){
 }
 
 fun main() {
-    val user1 = User(1,"Kildong",35)
+    val user1 = User(1, "Kildong", 35)
     user1.name = "coco"
     println("user3.name = ${user1.name}")
 }
