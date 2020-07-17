@@ -19,3 +19,42 @@ abstract class Vehicle(val name: String,val color: String, val weight: Double){
     }
 }
 
+class Car(name: String,
+          color: String,
+          weight: Double,
+          override var maxSpeed: Double): Vehicle(name, color, weight) {
+
+    override fun start() {
+        println("Car Started")
+    }
+
+    override fun stop() {
+        println("Car Stopped")
+    }
+}
+
+class Motocycle(name: String,
+          color: String,
+          weight: Double,
+          override var maxSpeed: Double): Vehicle(name, color, weight) {
+
+    override fun start() {
+        println("Motocycle Started")
+    }
+
+    override fun stop() {
+        println("Motocycle Stopped")
+    }
+}
+
+fun main() {
+    val car = Car("Macerati","Yellow",123141.0,554.53)
+    val motor = Motocycle("Yamaha","Grey",404.0,100.0)
+
+    car.year = "2018"
+
+    car.displaySpecs()
+    car.start()
+    motor.displaySpecs()
+    motor.stop()
+}
