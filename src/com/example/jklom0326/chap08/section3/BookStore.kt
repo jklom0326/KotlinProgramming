@@ -1,4 +1,4 @@
-package com.example.jklom0326.chap08.section2
+package com.example.jklom0326.chap08.section3
 
 import java.util.*
 
@@ -30,8 +30,14 @@ fun main() {
             val occupation = scanner.nextLine()
 
             when(occupation.toLowerCase()){
-                "student" -> calculatePrice(price,studentDiscount)
-                "teacher" -> calculatePrice(price,teacherDiscount)
+                "student" -> calculatePrice(
+                    price,
+                    studentDiscount
+                )
+                "teacher" -> calculatePrice(
+                    price,
+                    teacherDiscount
+                )
                 else -> println("할인을 적용할 수 없습니다" +
                 "\n 최종 가격은 \$200 입니다")
             }
