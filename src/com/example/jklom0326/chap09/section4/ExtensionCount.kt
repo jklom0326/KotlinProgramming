@@ -43,4 +43,15 @@ fun main() {
     // filterIndexed: 인덱스와 함게 추출
     println("filterIndexed :" + list.filterIndexed{idx, value -> idx != 1 && value % 2 == 0})
 
+    // max/min : 최댓값 요소와 최솟 값 요소의 반환
+    println(list.max())
+    println(list.min())
+
+    // maxBy/minBy: 최댓값과 최솟값으로 나온 요소 it에 대한 식의 결과
+    println("maxBy: "+ map.maxBy { it.key }) // 키를 기준으로 최댓값
+    println("minBy: "+ map.minBy { it.key }) // 키를 기준으로 최솟값
+
+    // sumBy: 식에 의해 도출된 모든 요소를 합산
+    println(listPair.sumBy { it.second })
+
 }
