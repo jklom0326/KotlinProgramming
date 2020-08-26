@@ -5,6 +5,6 @@ import java.io.PrintWriter
 
 fun main() {
     PrintWriter(FileOutputStream("f:\\test\\output.txt")).use {
-        it.println("hello")
+        it.println("umjunsik")
     }
 }
