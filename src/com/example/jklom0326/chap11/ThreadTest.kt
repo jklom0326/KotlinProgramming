@@ -9,9 +9,10 @@ class SimpelThread: Thread() {
     // 2. Runnable 인터페이스로부터 run() 메서드 구현하기
     class SimpleRunnable: Runnable {
         override fun run() {
-            println("Current Threads: ${Thread.currentThread()}")
+            println("interface Threads: ${Thread.currentThread()}")
         }
     }
+
 }
 
 fun main() {
@@ -21,4 +22,17 @@ fun main() {
     val runnable = SimpelThread.SimpleRunnable()
     val thread1 = Thread(runnable)
     thread1.start()
+
+    // 익명객체를 이용한방법
+    object : Thread() {
+        override fun run() {
+            println("object Threads : ${Thread.currentThread()}")
+        }
+    }.start()
+
+    // 람다식
+    Thread {
+        println("lamda Threads : ${Thread.currentThread()}")
+    }.start()
+
 }
