@@ -1,4 +1,4 @@
-package com.example.jklom0326.chap11
+package com.example.jklom0326.chap11.section1
 
 // 1. Thread클래스를 상속받아 구현하기
 class SimpelThread: Thread() {
